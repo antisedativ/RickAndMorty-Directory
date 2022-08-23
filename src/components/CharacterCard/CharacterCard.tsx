@@ -9,7 +9,7 @@ interface IProps {
 const CharacterCard: FC<IProps> = ({data}) => {
     return (
         <Link to={`/character/${data.id}`}>
-            <img src={data.image} alt={data.name}/>
+            <img src={data.image} alt={data.name} width='200px'/>
             <div>{data.name}</div>
             <div>{data.species}</div>
         </Link>
