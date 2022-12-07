@@ -2,7 +2,6 @@ import React from 'react';
 import {useGetAllCharactersQuery} from "../../store/api/charcters";
 import CharacterCard from "../../components/CharacterCard/CharacterCard";
 import cl from "./homePage.module.css";
-import { Container } from '@mui/material';
 
 const HomePage = () => {
     const {data: allCharacters, isLoading, error} = useGetAllCharactersQuery();
@@ -12,7 +11,7 @@ const HomePage = () => {
     if(error) return <h1>ups... </h1>
 
     return (
-        <Container maxWidth="lg">
+        <div>
             <div className={cl.container}>
                 {
                     allCharacters?.results.map(data => (
@@ -23,7 +22,7 @@ const HomePage = () => {
                     ))
                 }
             </div>
-        </Container>
+        </div>
     );
 };
 
