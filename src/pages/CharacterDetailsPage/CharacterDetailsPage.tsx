@@ -1,7 +1,7 @@
 import React from 'react';
 import {useGetCharacterDetailsByIdQuery} from "../../store/api/charcters";
 import {Navigate, useParams} from "react-router-dom";
-import styles from './CharacterDetailsPage.module.css'
+import styles from './CharacterDetailsPage.module.scss'
 import NotFound from '../NotFound/NotFound';
 
 const CharacterDetailsPage = () => {

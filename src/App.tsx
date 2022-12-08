@@ -1,4 +1,5 @@
 import React from 'react';
+import './styles/index.scss'
 import {Route, Routes} from "react-router-dom";
 import Header from './components/Header/Header';
 import HomePage from "./pages/HomePage/HomePage";

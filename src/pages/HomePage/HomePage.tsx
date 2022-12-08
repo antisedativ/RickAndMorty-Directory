@@ -1,7 +1,7 @@
 import React from 'react';
 import {useGetAllCharactersQuery} from "../../store/api/charcters";
 import CharacterCard from "../../components/CharacterCard/CharacterCard";
-import cl from "./homePage.module.css";
+import cl from "./homePage.module.scss";
 import NotFound from '../NotFound/NotFound';
 
 const HomePage = () => {

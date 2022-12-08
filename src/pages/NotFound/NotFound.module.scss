@@ -1,10 +1,12 @@
+@import '../../styles/variables.scss';
+
 .wrapper {
     width: 500px;
     height: 350px;
     margin: 40px auto;
-    background-color: #fff;
+    background-color: $white;
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    box-shadow: $shadow;
     display: flex;
     justify-content: center;
 
@@ -17,17 +19,18 @@
 
         & .code {
             font-size: 60px;
-            color: #00b2cb;
+            font-weight: bold;
+            color: $primary;
         }
 
         & .description {
             font-size: 25px;
             margin-bottom: 20px;
             text-decoration: underline;
-            color: #000;
+            color: $black;
             cursor: pointer;
             &:hover {
-                color: #00b2cb;
+                color: $primary;
             }
         }
     
