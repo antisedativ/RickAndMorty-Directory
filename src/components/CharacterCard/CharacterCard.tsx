@@ -14,7 +14,6 @@ const CharacterCard: FC<IProps> = ({data}) => {
             <Link to={`/character/${data.id}`} className={cl.card}>
                 <img src={data.image} alt={data.name}/>
                 <div className={cl.card__name}>{data.name}</div>
-                {/* <div>{data.species}</div> */}
             </Link>
         </div>
     );

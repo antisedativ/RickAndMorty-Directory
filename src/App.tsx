@@ -3,6 +3,7 @@ import {Route, Routes} from "react-router-dom";
 import Header from './components/Header/Header';
 import HomePage from "./pages/HomePage/HomePage";
 import CharacterDetailsPage from "./pages/CharacterDetailsPage/CharacterDetailsPage";
+import NotFound from './pages/NotFound/NotFound';
 
 function App() {
   return (
@@ -11,7 +12,7 @@ function App() {
         <Routes>
             <Route path={""} element={<HomePage/>}/>
             <Route path={"/character/:id"} element={<CharacterDetailsPage />}/>
-            <Route path={"*"} element={<h1>Not found...</h1>} />
+            <Route path={"*"} element={<NotFound />} />
         </Routes>
     </div>
   );

@@ -2,13 +2,14 @@ import React from 'react';
 import {useGetAllCharactersQuery} from "../../store/api/charcters";
 import CharacterCard from "../../components/CharacterCard/CharacterCard";
 import cl from "./homePage.module.css";
+import NotFound from '../NotFound/NotFound';
 
 const HomePage = () => {
     const {data: allCharacters, isLoading, error} = useGetAllCharactersQuery();
 
     if(isLoading) return <h1>Loading...</h1>
 
-    if(error) return <h1>ups... </h1>
+    if(error) return <NotFound />
 
     return (
         <div className={cl.wrapper}>

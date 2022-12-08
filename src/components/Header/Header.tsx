@@ -5,7 +5,6 @@ import cl from './Header.module.scss'
 const Header:React.FC = () => {
   const setActive = ({isActive}:any) => (isActive ? [cl.navigation__item, cl.active].join(" ") : cl.navigation__item);
 
-
   return (
     <div className={cl.wrapper}>
       <div className={cl.container}>

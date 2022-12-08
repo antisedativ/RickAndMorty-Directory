@@ -2,6 +2,7 @@ import React from 'react';
 import {useGetCharacterDetailsByIdQuery} from "../../store/api/charcters";
 import {Navigate, useParams} from "react-router-dom";
 import styles from './CharacterDetailsPage.module.css'
+import NotFound from '../NotFound/NotFound';
 
 const CharacterDetailsPage = () => {
     const {id} = useParams();
@@ -11,7 +12,7 @@ const CharacterDetailsPage = () => {
 
     if(error) return <Navigate  to={"/"} replace/>
 
-    if(!data) return <h1>Data not found :(</h1>
+    if(!data) return <NotFound />
 
     return (
         <div className={styles.wrapper}>
