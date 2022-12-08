@@ -10,7 +10,7 @@
     min-height: 600px;
     display: flex;
     flex-direction: row;
-    padding: 10px;
+    padding: 20px;
 }
 
 .content img {
@@ -21,10 +21,54 @@
 
 .description {
     align-items: center;
+
+    & .stat {
+        display: flex;
+    }
+
+    & .item {
+        font-size: 20px;
+        margin: 5px;
+
+
+        & .status {
+            display: block;
+            margin: 8px 5px;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background-color: greenyellow;
+        }
+    }
+
+    & span {
+        color: $primary;
+        margin-right: 5px;
+    }
+
+
 }
 
 .name {
     font-size: 40px;
     text-align: center;
+    color: $primary;
+    margin-bottom: 10px;
 }
 
+.info {
+    margin: 0 30px;
+    .history {
+        text-align: justify;
+        margin-top: 10px;
+        font-size: 18px;
+    }
+}
+
+hr {
+    border: .2px solid $primary;
+    width: 100%;
+    height: 0;
+    box-sizing: content-box;
+    display: block;
+}

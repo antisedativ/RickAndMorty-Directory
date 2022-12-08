@@ -17,12 +17,32 @@ const CharacterDetailsPage = () => {
     return (
         <div className={styles.wrapper}>
             <div className={styles.content}>
-                <img src={data.image} alt={data.name}/>
                 <div className={styles.description}>
-                    <div className={styles.name}>{data.name}</div>
-                    <div className={styles.desc}>{data.species}</div>
-                    <div className={styles.desc}>{data.gender}</div>
+                    <img src={data.image} alt={data.name}/>
+                    <div className={[styles.item, styles.stat].join(' ')}>
+                        <span>Status:</span> 
+                        <span className={styles.status}></span> {data.status}
+                    </div>
+                    <div className={styles.item}>
+                        <span>Species:</span> {data.species}
+                    </div>
+                    <div className={styles.item}>
+                        <span>Gender:</span> {data.gender}
+                    </div>
+                    <div className={styles.item}>
+                        <span>Origin:</span> {data.origin.name}
+                    </div>
+                    <div className={styles.item}>
+                        <span>Location:</span> {data.location.name}
+                    </div>
                 </div>
+                <div className={styles.info}>
+                    <div className={styles.name}>{data.name}</div>
+                    <hr />
+                    <p className={styles.history}>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita enim atque nulla, eum tenetur quibusdam. Suscipit dicta quos, assumenda error qui neque deleniti amet exercitationem a deserunt similique cumque maxime?
+                    Eius recusandae eligendi quidem consectetur amet nesciunt ex, quo laudantium quas, sunt, quam non nihil at corrupti cumque? Distinctio repellendus repudiandae tempore dolorem earum illum ab perferendis architecto, voluptates iste.</p>
+                </div>
+
             </div>
         </div>
     );

@@ -6,6 +6,7 @@
 
 .card {
     text-decoration: none;
+
     & img {
         width: 240px;
         border-radius: 5px;
@@ -19,4 +20,6 @@
             color: $primary;
         }
     }
+
+
 }
