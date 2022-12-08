@@ -7,17 +7,17 @@
 }
 
 .content {
+    background: #fff;
     display: flex;
     flex-direction: row;
-    border: 2px solid black;
-    border-radius: 15px;
     padding: 10px;
     width: 60%;
 }
 
 .content img {
+    width: 250px;
+    height: 250px;
     border-radius: 5px;
-    border: 1px solid black;
 }
 
 .description {

@@ -11,7 +11,7 @@ const HomePage = () => {
     if(error) return <h1>ups... </h1>
 
     return (
-        <div>
+        <div className={cl.wrapper}>
             <div className={cl.container}>
                 {
                     allCharacters?.results.map(data => (

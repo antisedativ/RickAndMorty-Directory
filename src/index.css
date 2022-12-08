@@ -2,3 +2,12 @@
     margin: 0;
     padding: 0;
 }
+
+body {
+    /* background-image: url(https://gamerwall.pro/uploads/posts/2022-03/1647924142_26-gamerwall-pro-p-rik-i-morti-fon-krasivie-40.jpg); */
+    background: url(https://gamerwall.pro/uploads/posts/2022-03/1647924174_1-gamerwall-pro-p-rik-i-morti-fon-krasivie-2.png) center no-repeat fixed;
+    background-color: #f0f0f0;
+    overflow-x: hidden;
+    width: 100%;
+    font-family: "Roboto",sans-serif;
+}

@@ -1,0 +1,20 @@
+.wrapper {
+    margin: 14px;
+}
+
+.card {
+    text-decoration: none;
+    & img {
+        width: 240px;
+        border-radius: 5px;
+    }
+
+    &__name {
+        color: #000;
+        font-size: 20px;
+
+        &:hover {
+            color: #00b2cb;
+        }
+    }
+}

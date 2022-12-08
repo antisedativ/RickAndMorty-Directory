@@ -16,7 +16,7 @@ const CharacterDetailsPage = () => {
     return (
         <div className={styles.wrapper}>
             <div className={styles.content}>
-                <img src={data.image} alt={data.name} width='300' height='300'/>
+                <img src={data.image} alt={data.name}/>
                 <div className={styles.description}>
                     <div className={styles.name}>{data.name}</div>
                     <div className={styles.desc}>{data.species}</div>
